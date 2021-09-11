@@ -25,6 +25,26 @@ const SavedBooks = () => {
       )
   }
 
+      // accepts bookId and deletes the book from the database
+      const handleDeleteBook = async (bookId) => {
+        const token = Auth.loggedIn() ? Auth.getToken() : null;
+
+        if (!token) {
+            return false;
+        }
+
+        try {
+            // use REMOVE_BOOK mutation
+            await deleteBook({ 
+                variables: { bookId }
+            });
+            // upon success, remove book's id from localStorage
+            removeBookId(bookId);
+        } catch (err) {
+            console.error(err);
+        }
+    };
+    
   // use this to determine if `useEffect()` hook needs to run again
   const userDataLength = Object.keys(userData).length;
 
