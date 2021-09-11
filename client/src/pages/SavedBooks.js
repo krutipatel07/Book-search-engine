@@ -8,7 +8,22 @@ import { REMOVE_BOOK } from '../utils/mutations';
 import { removeBookId } from '../utils/localStorage';
 
 const SavedBooks = () => {
-  const [userData, setUserData] = useState({});
+  const { loading, data } = useQuery(GET_ME);
+  const [deleteBook] = useMutation(REMOVE_BOOK);
+  const user = data?.me || {};
+
+  // renders if data is not queried yet
+  if (loading) {
+      return <h2>LOADING...</h2>;
+  }
+
+  if (!user?.username) {
+      return (
+          <h4>
+              You must be logged into see this page.
+          </h4>
+      )
+  }
 
   // use this to determine if `useEffect()` hook needs to run again
   const userDataLength = Object.keys(userData).length;
