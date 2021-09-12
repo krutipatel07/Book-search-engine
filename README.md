@@ -28,4 +28,4 @@ If you have any questions about the repo, please [open an issue](https://github.
     
 ## Credits
 * [UCF Coding Boot Camp Starter Code](https://github.com/coding-boot-camp/solid-broccoli)
-* Coded with fervor by Mila Decker.
+* Coded by Kruti Patel.
