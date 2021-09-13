@@ -24,7 +24,7 @@ The deployed application is simple to use and only requires the user to search f
 ![Book Search, a Google Books API powered search engine.](/assets/images/screenshot.png)
 
 ## Questions
-If you have any questions about the repo, please [open an issue](https://github.com/krutipatel07/Book-search-engine/issues) or contact me via email at kruti.patel0709@gmail.com. You can find more of my work on my GitHub, [kruti](https://github.com/krutipatel07/).
+If you have any questions about the repo, please [open an issue](https://github.com/krutipatel07/Book-search-engine/issues) or contact me via email at kruti.patel0709@gmail.com. You can find more of my work on my GitHub, [kruti](https://github.com/krutipatel07/B).
     
 ## Credits
 * [UCF Coding Boot Camp Starter Code](https://github.com/coding-boot-camp/solid-broccoli)
